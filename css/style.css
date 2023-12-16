@@ -157,9 +157,11 @@ nav a:hover {
   position: relative;
 }
 
-.container.statistics h3 {
+.statistics_page h3 {
   font-size: 36px;
   font-family: var(--secondary-font);
+  text-align: center;
+  padding-bottom: 60px;
 }
 
 .round_wrapper {
@@ -167,7 +169,7 @@ nav a:hover {
   display: flex;
   justify-content: space-around;
   position: absolute;
-  top: 35%;
+  top: -3%;
 }
 
 .round {
@@ -349,4 +351,115 @@ nav a:hover {
   position: absolute;
   top: 25%;
   left: 20%;
+}
+
+.pricing_page {
+  width: 100%;
+  margin: 80px 0;
+}
+
+.pricing_page h4 {
+  font-family: var(--secondary-font);
+  font-size: 36px;
+  text-align: center;
+}
+
+.container.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 600px;
+}
+
+.container.pricing article {
+  width: 25%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--basic-text-black);
+  border-radius: 18px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.container.pricing h5 {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.container.pricing h6 {
+  font-size: 46px;
+  font-weight: lighter;
+}
+
+.container.pricing span {
+  font-family: var(--secondary-font);
+  font-size: 12px;
+  font-weight: bold;
+  color: #13253b;
+  padding-top: 10px;
+}
+
+.container.pricing ul {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container.pricing .pricing_professional ul {
+  gap: 25px;
+}
+
+.container.pricing li {
+  text-align: center;
+  font-size: 14px;
+}
+
+.container.pricing button {
+  position: absolute;
+  bottom: -5%;
+  padding: 15px 60px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.container.pricing .pricing_basic {
+  border: 1px solid var(--basic-box-text-red);
+}
+
+.pricing_basic h6 {
+  padding-bottom: 13px;
+  color: #eb476e;
+}
+
+.pricing_basic button {
+  background-color: #eb476e;
+}
+
+.container.pricing .pricing_professional {
+  border: 1px solid var(--basic-box-text-blue);
+  box-shadow: 5px 10px 27px #07ace629;
+  width: 30%;
+  height: 85%;
+}
+
+.pricing_professional h6 {
+  color: var(--basic-box-text-blue);
+}
+
+.container.pricing .pricing_premium {
+  border: 1px solid var(--basic-box-text-green);
+}
+
+.pricing_premium h6 {
+  color: var(--basic-box-text-green);
+}
+
+.pricing_premium button {
+  background-color: var(--basic-box-text-green);
 }
