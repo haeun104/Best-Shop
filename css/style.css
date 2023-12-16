@@ -59,6 +59,7 @@ header {
   height: 70px;
   box-shadow: 0px 3px 6px #00000029;
   position: fixed;
+  z-index: 2;
 }
 header h1 {
   font-family: var(--secondary-font);
@@ -206,7 +207,7 @@ nav a:hover {
   color: var(--secondary-text-gray);
 }
 
-article {
+.statistics article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,4 +222,131 @@ article {
   height: 50px;
   align-self: flex-end;
   margin-right: 28px;
+}
+
+.benefits_page {
+  width: 100%;
+  max-height: 1395px;
+  background-color: #f7f7f7;
+  padding: 100px 250px;
+}
+
+.container.benefits {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+
+.container.benefits h4 {
+  font-family: var(--secondary-font);
+  font-size: 36px;
+  text-align: left;
+}
+
+.container.benefits img {
+  width: 300px;
+  position: absolute;
+}
+
+.benefit1 img {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.benefit2 img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img_wrapper {
+  width: 50%;
+  height: 300px;
+  position: relative;
+}
+
+.container.benefits article {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--basic-background-white);
+  border-radius: 5px;
+}
+
+.content_wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 90px 30px;
+}
+
+.benefit1 .content_wrapper::after {
+  width: 327px;
+  content: "";
+  border-bottom: 4px solid var(--basic-box-text-red);
+  padding-top: 40px;
+}
+
+.benefit2 .content_wrapper::after {
+  width: 327px;
+  content: "";
+  border-bottom: 4px solid var(--basic-box-text-blue);
+  padding-top: 40px;
+}
+
+.benefit3 .content_wrapper::after {
+  width: 327px;
+  content: "";
+  border-bottom: 4px solid var(--basic-box-text-green);
+  padding-top: 40px;
+}
+
+.rectangle {
+  width: 150px;
+  height: 150px;
+  background-color: var(--basic-box-text-red);
+  border-radius: 41px;
+  position: absolute;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  right: 25%;
+  top: 20%;
+  z-index: 0;
+}
+
+.circle {
+  width: 220px;
+  height: 220px;
+  background-color: var(--basic-box-text-blue);
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 28%;
+}
+
+.benefit3 {
+  width: 60%;
+}
+
+.benefit3 .content_wrapper {
+  width: 100%;
+}
+
+.benefit3 .img_wrapper {
+  width: 35%;
+  height: calc();
+  position: absolute;
+  background-color: var(--basic-box-text-green);
+  left: 65%;
+  border-radius: 5px;
+}
+
+.benefit3 .img_wrapper img {
+  position: absolute;
+  top: 25%;
+  left: 20%;
 }
