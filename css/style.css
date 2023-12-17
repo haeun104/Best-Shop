@@ -44,7 +44,7 @@ img {
   --main-font: "Open Sans", sans-serif;
   --secondary-font: "Raleway", sans-serif;
 }
-
+/* Global */
 body {
   font-family: var(--main-font);
 }
@@ -53,6 +53,21 @@ body {
   max-width: 1352px;
   margin: 0 auto;
 }
+
+.container button {
+  appearance: none;
+  border: none;
+  font-size: 16px;
+  font-family: var(--main-font);
+  background-color: var(--basic-box-text-blue);
+  color: white;
+  border-radius: 40px;
+  padding: 15px 150px;
+  box-shadow: 5px 10px 14px #07ace629;
+  cursor: pointer;
+}
+
+/* Header */
 
 header {
   width: 100%;
@@ -105,6 +120,8 @@ nav a:hover {
   border-bottom: 4px solid var(--basic-box-text-blue);
 }
 
+/* Opening */
+
 .opening_page {
   width: 100%;
   height: 100vh;
@@ -132,18 +149,7 @@ nav a:hover {
   font-size: 16px;
 }
 
-.container button {
-  appearance: none;
-  border: none;
-  font-size: 16px;
-  font-family: var(--main-font);
-  background-color: var(--basic-box-text-blue);
-  color: white;
-  border-radius: 40px;
-  padding: 15px 150px;
-  box-shadow: 5px 10px 14px #07ace629;
-  cursor: pointer;
-}
+/* Statistics */
 
 .statistics_page {
   margin: 100px 0;
@@ -225,6 +231,8 @@ nav a:hover {
   align-self: flex-end;
   margin-right: 28px;
 }
+
+/* Benefits */
 
 .benefits_page {
   width: 100%;
@@ -353,9 +361,11 @@ nav a:hover {
   left: 20%;
 }
 
+/* Pricing */
+
 .pricing_page {
   width: 100%;
-  margin: 80px 0;
+  padding: 80px 0;
 }
 
 .pricing_page h4 {
@@ -462,4 +472,132 @@ nav a:hover {
 
 .pricing_premium button {
   background-color: var(--basic-box-text-green);
+}
+
+/* Contact */
+
+.contact_form {
+  width: 100%;
+}
+
+.container.contact {
+  display: flex;
+  justify-content: center;
+  padding-right: 200px;
+  padding-left: 200px;
+  margin-bottom: 80px;
+}
+
+.contact_info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input_wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input_wrapper label {
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--basic-box-text-blue);
+  letter-spacing: 3.28px;
+}
+
+.contact_info_wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact_info h3 {
+  font-family: var(--secondary-font);
+  font-size: 49px;
+}
+
+.contact_info_wrapper {
+  color: #a5a5a5;
+}
+
+.input_wrapper input {
+  border: none;
+  border-bottom: 1px solid var(--secondary-text-gray);
+  outline: none;
+  padding: 5px 0;
+}
+
+.input_wrapper button {
+  align-self: flex-end;
+  padding: 15px 100px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox p {
+  font-size: 12px;
+  color: #707070;
+  letter-spacing: 0;
+  padding-left: 20px;
+}
+
+.checkbox span {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #95989a;
+  border-radius: 4px;
+  position: absolute;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+}
+
+input[type="checkbox"]:checked + span {
+  background-image: url(../images/Checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Footer */
+
+footer {
+  box-shadow: 0px -5px 40px #00000029;
+  padding: 20px 0;
+}
+
+.container.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container.footer h3 {
+  font-family: var(--secondary-font);
+  color: var(--basic-box-text-blue);
+  font-size: 26px;
+}
+
+.container.footer p {
+  color: var(--secondary-text-gray);
+  font-size: 11px;
+  padding: 5px 0;
+}
+
+.social_img_wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.social_img_wrapper img {
+  cursor: pointer;
 }
